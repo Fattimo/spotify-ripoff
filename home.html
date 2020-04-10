@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify</title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id = "whole">
+    <div id = "upper">
+        <div id = "sidebar">
+            <div id = "spot">
+                <img src = "Spotify_Icon_RGB_White.png"/>
+                Spootify
+            </div>
+            <div id = "nav">
+                <div class = "sidebar-button-long">Home</div>
+                <div class = "sidebar-button-long">Search</div>
+                <div class = "sidebar-button-long">Your Library</div>
+            </div>
+            <div id = "playlists">
+                <div style = "font-size: 10px; margin-bottom: 15px;">PLAYLISTS</div>
+                <div id = "playlist-buttons">
+                    <div class = "sidebar-button-long">Create Playlist</div>
+                    <div class = "sidebar-button-long">Liked Songs</div>
+                </div>
+                <div style = "color: darkgrey">______________</div>
+                <div class = "content-wrapper" id = "playlist-list">
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                    <div>playlist</div>
+                </div>
+                <div style = "padding-top: 5px; padding-bottom: 10px;">install app</div>
+            </div>
+        </div>
+        <div id = "screen">
+            <div id = "header">
+                <div id = "nav-buttons">
+                    <div><</div>
+                    <div>></div>
+                </div>
+                <div class = "dropdown" onclick="reveal()">
+                    <div class = "dropbtn" id = "prof">Matt Chen v</div>
+                    <div class = "dropdown-content" id = "profile-dropdown">
+                        <div>Account</div>
+                        <div>Log Out</div>
+                    </div>
+                </div>
+                <script>
+                    function reveal() {
+                        document.getElementById("profile-dropdown").classList.toggle("show");
+                    }
+
+                    //not working
+                    window.onclick = function(e) {
+                        if (!(e.target.className === ('.dropbtn'))) {
+                            let dropdown = document.getElementById("dropdown-content");
+                            if (dropdown.classList.contains('show')) {
+                                dropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                </script>
+            </div>
+            <div id = "main" class = "content-wrapper">
+                <div class = "row" id = "sample">
+                    <div>Recently Played</div>
+                    <div class = "lists">
+                        <div class = "icon">
+                            <div class = "icon-content">
+                                <div class = "playlist-image"></div>
+                                <div>Kiddie Pool 2020</div>
+                                <div>By Jason Lieb</div>
+                            </div>
+                        </div>
+                        <div class = "icon">
+                            <div class = "playlist-image"></div>
+                            <div>Kiddie Pool 2020</div>
+                            <div>By Jason Lieb</div>
+                        </div>
+                        <div class = "icon">
+                            <div class = "playlist-image"></div>
+                            <div>Kiddie Pool 2020</div>
+                            <div>By Jason Lieb</div>
+                        </div>
+                        <div class = "icon">
+                            <div class = "playlist-image"></div>
+                            <div>Kiddie Pool 2020</div>
+                            <div>By Jason Lieb</div>
+                        </div>
+                        <div class = "icon">
+                            <div class = "playlist-image"></div>
+                            <div>Kiddie Pool 2020</div>
+                            <div>By Jason Lieb</div>
+                        </div>
+                        <div class = "icon">
+                            <div class = "playlist-image"></div>
+                            <div>Kiddie Pool 2020</div>
+                            <div>By Jason Lieb</div>
+                        </div>
+                    </div>
+                </div>
+                <p>f</p>
+                <p>f</p>
+                <p>f</p>
+                <p>f</p>
+                <p>f</p>
+                <p>f</p>
+                <p>f</p>
+                <p>f</p>
+                <p>finish</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id = "song-select">
+            <div>img</div>
+            <div id = "song-info">
+                <div>song name</div>
+                <div>artist</div>
+            </div>
+            <div>heart</div>
+        </div>
+        <div id = "control-panel">
+            <div id = "control-buttons">
+                <button>shuffle</button>
+                <button>back</button>
+                <button>play</button>
+                <button>forward</button>
+                <button>loop</button>
+            </div>
+            <div id = slider>slider</div>
+        </div>
+        <div id = "vol-queue">
+            <div>queue</div>
+            <div>devices</div>
+            <div>slider</div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
